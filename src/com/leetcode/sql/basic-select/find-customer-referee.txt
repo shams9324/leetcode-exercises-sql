@@ -1,0 +1,15 @@
+Leetcode problem: https://leetcode.com/problems/find-customer-referee/
+
+Task:
+- Write an SQL query to report the name and bonus amount of each employee with a bonus less than 1000.
+- Return the result table in any order.
+
+My solution:
+SELECT
+    name
+FROM
+    Customer
+WHERE
+    referee_id <> 2
+OR
+    referee_id IS NULL;

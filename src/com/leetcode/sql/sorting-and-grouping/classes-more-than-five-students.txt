@@ -1,0 +1,14 @@
+Leetcode Problem: https://leetcode.com/problems/classes-more-than-5-students/
+
+Task:
+- Write an SQL query to report all the classes that have at least five students.
+- Return the result table in any order.
+
+My solution:
+SELECT
+    class
+FROM
+    courses
+GROUP BY
+    class
+HAVING COUNT(student) >= 5;
